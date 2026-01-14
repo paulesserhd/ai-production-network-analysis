@@ -1,0 +1,282 @@
+"surplus_country_iso2","surplus_country_name","deficit_country_iso2","deficit_country_name","trade_value","year","surplus_country_iso3","deficit_country_iso3","total_trade_year"
+"US","United States of America","CA","Canada",505.4,2017,"USA","CAN",8786.980931
+"ES","Spain","CO","Colombia",46.14,2017,"ESP","COL",8786.980931
+"US","United States of America","CO","Colombia",218.79,2017,"USA","COL",8786.980931
+"CR","Costa Rica","IE","Ireland",91.737891,2017,"CRI","IRL",8786.980931
+"CR","Costa Rica","US","United States of America",868.386104,2017,"CRI","USA",8786.980931
+"DE","Germany","CZ","Czech Republic",69.777362,2017,"DEU","CZE",8786.980931
+"DE","Germany","CZ","Czech Republic",69.777362,2017,"DEU","CZE",8786.980931
+"IE","Ireland","CZ","Czech Republic",50.952128,2017,"IRL","CZE",8786.980931
+"DE","Germany","FR","France",87,2017,"DEU","FRA",8786.980931
+"DE","Germany","FR","France",87,2017,"DEU","FRA",8786.980931
+"NL","Netherlands","DE","Germany",53.1,2017,"NLD","DEU",8786.980931
+"NL","Netherlands","DE","Germany",53.1,2017,"NLD","DEU",8786.980931
+"DK","Denmark","NO","Norway",60.421108,2017,"DNK","NOR",8786.980931
+"US","United States of America","DK","Denmark",106.187843,2017,"USA","DNK",8786.980931
+"ES","Spain","FR","France",65.38105,2017,"ESP","FRA",8786.980931
+"IE","Ireland","ES","Spain",162.325365,2017,"IRL","ESP",8786.980931
+"US","United States of America","ES","Spain",66.508309,2017,"USA","ESP",8786.980931
+"US","United States of America","FR","France",208.543003,2017,"USA","FRA",8786.980931
+"IE","Ireland","GB","United Kingdom",144.2,2017,"IRL","GBR",8786.980931
+"GB","United Kingdom","IT","Italy",106.8,2017,"GBR","ITA",8786.980931
+"GB","United Kingdom","JP","Japan",113.3,2017,"GBR","JPN",8786.980931
+"GB","United Kingdom","KR","Korea, Republic of",52.8,2017,"GBR","KOR",8786.980931
+"GB","United Kingdom","NL","Netherlands",216.2,2017,"GBR","NLD",8786.980931
+"GB","United Kingdom","RU","Russian Federation",56.6,2017,"GBR","RUS",8786.980931
+"GB","United Kingdom","SE","Sweden",52.8,2017,"GBR","SWE",8786.980931
+"GB","United Kingdom","SG","Singapore",52.7,2017,"GBR","SGP",8786.980931
+"GB","United Kingdom","US","United States of America",1970.4,2017,"GBR","USA",8786.980931
+"US","United States of America","IT","Italy",204.033966,2017,"USA","ITA",8786.980931
+"NL","Netherlands","RU","Russian Federation",88.489869,2017,"NLD","RUS",8786.980931
+"NL","Netherlands","SE","Sweden",45.090379,2017,"NLD","SWE",8786.980931
+"NL","Netherlands","SG","Singapore",107.202377,2017,"NLD","SGP",8786.980931
+"RO","Romania","US","United States of America",90.518936,2017,"ROU","USA",8786.980931
+"US","United States of America","SE","Sweden",46.330364,2017,"USA","SWE",8786.980931
+"US","United States of America","ZA","South Africa",56,2017,"USA","ZAF",8786.980931
+"AT","Austria","GB","United Kingdom",60.189455,2018,"AUT","GBR",11023.65403
+"CA","Canada","US","United States of America",97.1999999999999,2018,"CAN","USA",11023.65403
+"ES","Spain","CO","Colombia",70.45,2018,"ESP","COL",11023.65403
+"US","United States of America","CO","Colombia",213.72,2018,"USA","COL",11023.65403
+"CR","Costa Rica","IE","Ireland",82.059831,2018,"CRI","IRL",11023.65403
+"CR","Costa Rica","NL","Netherlands",104.192499,2018,"CRI","NLD",11023.65403
+"CR","Costa Rica","US","United States of America",772.676763,2018,"CRI","USA",11023.65403
+"US","United States of America","CY","Cyprus",106.216686,2018,"USA","CYP",11023.65403
+"DE","Germany","CZ","Czech Republic",110.937427,2018,"DEU","CZE",11023.65403
+"DE","Germany","CZ","Czech Republic",110.937427,2018,"DEU","CZE",11023.65403
+"IE","Ireland","CZ","Czech Republic",67.978679,2018,"IRL","CZE",11023.65403
+"DE","Germany","ES","Spain",62.6,2018,"DEU","ESP",11023.65403
+"DE","Germany","ES","Spain",62.6,2018,"DEU","ESP",11023.65403
+"IE","Ireland","DE","Germany",164.1,2018,"IRL","DEU",11023.65403
+"IE","Ireland","DE","Germany",164.1,2018,"IRL","DEU",11023.65403
+"DE","Germany","IT","Italy",121.7,2018,"DEU","ITA",11023.65403
+"DE","Germany","IT","Italy",121.7,2018,"DEU","ITA",11023.65403
+"NL","Netherlands","DE","Germany",125.2,2018,"NLD","DEU",11023.65403
+"NL","Netherlands","DE","Germany",125.2,2018,"NLD","DEU",11023.65403
+"DE","Germany","RU","Russian Federation",55.5,2018,"DEU","RUS",11023.65403
+"DE","Germany","RU","Russian Federation",55.5,2018,"DEU","RUS",11023.65403
+"US","United States of America","DE","Germany",685,2018,"USA","DEU",11023.65403
+"US","United States of America","DE","Germany",685,2018,"USA","DEU",11023.65403
+"DK","Denmark","NO","Norway",69.040845,2018,"DNK","NOR",11023.65403
+"US","United States of America","DK","Denmark",157.672769,2018,"USA","DNK",11023.65403
+"IE","Ireland","ES","Spain",147.523174,2018,"IRL","ESP",11023.65403
+"US","United States of America","ES","Spain",70.811124,2018,"USA","ESP",11023.65403
+"US","United States of America","FR","France",103.856315,2018,"USA","FRA",11023.65403
+"IE","Ireland","GB","United Kingdom",312.2,2018,"IRL","GBR",11023.65403
+"GB","United Kingdom","IT","Italy",132.1,2018,"GBR","ITA",11023.65403
+"GB","United Kingdom","JP","Japan",249.5,2018,"GBR","JPN",11023.65403
+"GB","United Kingdom","NL","Netherlands",229.5,2018,"GBR","NLD",11023.65403
+"GB","United Kingdom","SG","Singapore",72.1,2018,"GBR","SGP",11023.65403
+"GB","United Kingdom","US","United States of America",1519.6,2018,"GBR","USA",11023.65403
+"US","United States of America","IT","Italy",186.351274,2018,"USA","ITA",11023.65403
+"SE","Sweden","NL","Netherlands",261.88314,2018,"SWE","NLD",11023.65403
+"RO","Romania","US","United States of America",99.135573,2018,"ROU","USA",11023.65403
+"US","United States of America","SE","Sweden",66.444438,2018,"USA","SWE",11023.65403
+"US","United States of America","ZA","South Africa",68,2018,"USA","ZAF",11023.65403
+"IE","Ireland","AT","Austria",68.282431,2019,"IRL","AUT",10537.144461
+"CA","Canada","US","United States of America",248.7,2019,"CAN","USA",10537.144461
+"US","United States of America","CO","Colombia",193.96,2019,"USA","COL",10537.144461
+"CR","Costa Rica","IE","Ireland",83.515085,2019,"CRI","IRL",10537.144461
+"CR","Costa Rica","NL","Netherlands",120.691823,2019,"CRI","NLD",10537.144461
+"CR","Costa Rica","US","United States of America",830.858003,2019,"CRI","USA",10537.144461
+"DE","Germany","CZ","Czech Republic",76.901688,2019,"DEU","CZE",10537.144461
+"DE","Germany","CZ","Czech Republic",76.901688,2019,"DEU","CZE",10537.144461
+"IE","Ireland","CZ","Czech Republic",88.09553,2019,"IRL","CZE",10537.144461
+"DE","Germany","ES","Spain",70.5,2019,"DEU","ESP",10537.144461
+"DE","Germany","ES","Spain",70.5,2019,"DEU","ESP",10537.144461
+"DE","Germany","FR","France",94,2019,"DEU","FRA",10537.144461
+"DE","Germany","FR","France",94,2019,"DEU","FRA",10537.144461
+"GB","United Kingdom","DE","Germany",164.6,2019,"GBR","DEU",10537.144461
+"GB","United Kingdom","DE","Germany",164.6,2019,"GBR","DEU",10537.144461
+"DE","Germany","IT","Italy",97.4,2019,"DEU","ITA",10537.144461
+"DE","Germany","IT","Italy",97.4,2019,"DEU","ITA",10537.144461
+"LU","Luxembourg","DE","Germany",101.9,2019,"LUX","DEU",10537.144461
+"LU","Luxembourg","DE","Germany",101.9,2019,"LUX","DEU",10537.144461
+"NL","Netherlands","DE","Germany",109.7,2019,"NLD","DEU",10537.144461
+"NL","Netherlands","DE","Germany",109.7,2019,"NLD","DEU",10537.144461
+"DE","Germany","US","United States of America",275.4,2019,"DEU","USA",10537.144461
+"DE","Germany","US","United States of America",275.4,2019,"DEU","USA",10537.144461
+"DK","Denmark","NO","Norway",62.68551,2019,"DNK","NOR",10537.144461
+"US","United States of America","DK","Denmark",144.512488,2019,"USA","DNK",10537.144461
+"IE","Ireland","ES","Spain",118.654715,2019,"IRL","ESP",10537.144461
+"US","United States of America","ES","Spain",54.849821,2019,"USA","ESP",10537.144461
+"US","United States of America","FR","France",242.906351,2019,"USA","FRA",10537.144461
+"GB","United Kingdom","HK","Hong Kong, China",68.9,2019,"GBR","HKG",10537.144461
+"IE","Ireland","GB","United Kingdom",165.9,2019,"IRL","GBR",10537.144461
+"GB","United Kingdom","IT","Italy",130.2,2019,"GBR","ITA",10537.144461
+"GB","United Kingdom","JP","Japan",162.1,2019,"GBR","JPN",10537.144461
+"GB","United Kingdom","KR","Korea, Republic of",79.1,2019,"GBR","KOR",10537.144461
+"GB","United Kingdom","NL","Netherlands",210.6,2019,"GBR","NLD",10537.144461
+"GB","United Kingdom","SG","Singapore",70.2,2019,"GBR","SGP",10537.144461
+"GB","United Kingdom","US","United States of America",1522.8,2019,"GBR","USA",10537.144461
+"GR","Greece","IE","Ireland",67.163047,2019,"GRC","IRL",10537.144461
+"US","United States of America","IT","Italy",118.206961,2019,"USA","ITA",10537.144461
+"SE","Sweden","NL","Netherlands",229.025988,2019,"SWE","NLD",10537.144461
+"RO","Romania","US","United States of America",117.535331,2019,"ROU","USA",10537.144461
+"US","United States of America","RU","Russian Federation",137.504,2019,"USA","RUS",10537.144461
+"US","United States of America","SE","Sweden",81.71504,2019,"USA","SWE",10537.144461
+"US","United States of America","SK","Slovak Republic",60.446742,2019,"USA","SVK",10537.144461
+"US","United States of America","ZA","South Africa",57,2019,"USA","ZAF",10537.144461
+"IE","Ireland","AT","Austria",68.372835,2020,"IRL","AUT",10416.922333
+"CA","Canada","US","United States of America",546.6,2020,"CAN","USA",10416.922333
+"ES","Spain","CO","Colombia",76.46,2020,"ESP","COL",10416.922333
+"US","United States of America","CO","Colombia",201.76,2020,"USA","COL",10416.922333
+"CR","Costa Rica","GB","United Kingdom",53.967788,2020,"CRI","GBR",10416.922333
+"CR","Costa Rica","IE","Ireland",89.560122,2020,"CRI","IRL",10416.922333
+"CR","Costa Rica","NL","Netherlands",158.734987,2020,"CRI","NLD",10416.922333
+"CR","Costa Rica","US","United States of America",898.132515,2020,"CRI","USA",10416.922333
+"IE","Ireland","CZ","Czech Republic",77.945031,2020,"IRL","CZE",10416.922333
+"GB","United Kingdom","DE","Germany",214.7,2020,"GBR","DEU",10416.922333
+"GB","United Kingdom","DE","Germany",214.7,2020,"GBR","DEU",10416.922333
+"DE","Germany","IE","Ireland",96,2020,"DEU","IRL",10416.922333
+"DE","Germany","IE","Ireland",96,2020,"DEU","IRL",10416.922333
+"DE","Germany","IT","Italy",98.3,2020,"DEU","ITA",10416.922333
+"DE","Germany","IT","Italy",98.3,2020,"DEU","ITA",10416.922333
+"NL","Netherlands","DE","Germany",85.7,2020,"NLD","DEU",10416.922333
+"NL","Netherlands","DE","Germany",85.7,2020,"NLD","DEU",10416.922333
+"DK","Denmark","NO","Norway",59.256457,2020,"DNK","NOR",10416.922333
+"US","United States of America","DK","Denmark",143.924818,2020,"USA","DNK",10416.922333
+"IE","Ireland","ES","Spain",127.629292,2020,"IRL","ESP",10416.922333
+"ES","Spain","US","United States of America",107.117441,2020,"ESP","USA",10416.922333
+"US","United States of America","FR","France",312.235946,2020,"USA","FRA",10416.922333
+"GB","United Kingdom","HK","Hong Kong, China",66.7,2020,"GBR","HKG",10416.922333
+"IE","Ireland","GB","United Kingdom",202.6,2020,"IRL","GBR",10416.922333
+"GB","United Kingdom","IT","Italy",130.8,2020,"GBR","ITA",10416.922333
+"GB","United Kingdom","JP","Japan",233.3,2020,"GBR","JPN",10416.922333
+"GB","United Kingdom","NL","Netherlands",166.7,2020,"GBR","NLD",10416.922333
+"GB","United Kingdom","RU","Russian Federation",57.7,2020,"GBR","RUS",10416.922333
+"GB","United Kingdom","SE","Sweden",67.9,2020,"GBR","SWE",10416.922333
+"GB","United Kingdom","SG","Singapore",64.1,2020,"GBR","SGP",10416.922333
+"GB","United Kingdom","US","United States of America",1861.5,2020,"GBR","USA",10416.922333
+"IE","Ireland","US","United States of America",148.141143,2020,"IRL","USA",10416.922333
+"US","United States of America","IT","Italy",76.69153,2020,"USA","ITA",10416.922333
+"RO","Romania","US","United States of America",156.345882,2020,"ROU","USA",10416.922333
+"US","United States of America","RU","Russian Federation",148.091,2020,"USA","RUS",10416.922333
+"IE","Ireland","AT","Austria",85.151334,2021,"IRL","AUT",11608.121896
+"BG","Bulgaria","GB","United Kingdom",96.031783,2021,"BGR","GBR",11608.121896
+"BG","Bulgaria","US","United States of America",94.730859,2021,"BGR","USA",11608.121896
+"CA","Canada","US","United States of America",670,2021,"CAN","USA",11608.121896
+"ES","Spain","CO","Colombia",67.48,2021,"ESP","COL",11608.121896
+"MX","Mexico","CO","Colombia",64.49,2021,"MEX","COL",11608.121896
+"US","United States of America","CO","Colombia",226.43,2021,"USA","COL",11608.121896
+"DE","Germany","CZ","Czech Republic",94.021264,2021,"DEU","CZE",11608.121896
+"DE","Germany","CZ","Czech Republic",94.021264,2021,"DEU","CZE",11608.121896
+"IE","Ireland","CZ","Czech Republic",74.270886,2021,"IRL","CZE",11608.121896
+"NL","Netherlands","CZ","Czech Republic",73.916088,2021,"NLD","CZE",11608.121896
+"CZ","Czech Republic","US","United States of America",66.938409,2021,"CZE","USA",11608.121896
+"DE","Germany","ES","Spain",95.8,2021,"DEU","ESP",11608.121896
+"DE","Germany","ES","Spain",95.8,2021,"DEU","ESP",11608.121896
+"DE","Germany","FR","France",188.1,2021,"DEU","FRA",11608.121896
+"DE","Germany","FR","France",188.1,2021,"DEU","FRA",11608.121896
+"GB","United Kingdom","DE","Germany",126.5,2021,"GBR","DEU",11608.121896
+"GB","United Kingdom","DE","Germany",126.5,2021,"GBR","DEU",11608.121896
+"DE","Germany","IT","Italy",131.3,2021,"DEU","ITA",11608.121896
+"DE","Germany","IT","Italy",131.3,2021,"DEU","ITA",11608.121896
+"DE","Germany","JP","Japan",92.3,2021,"DEU","JPN",11608.121896
+"DE","Germany","JP","Japan",92.3,2021,"DEU","JPN",11608.121896
+"LU","Luxembourg","DE","Germany",149,2021,"LUX","DEU",11608.121896
+"LU","Luxembourg","DE","Germany",149,2021,"LUX","DEU",11608.121896
+"NL","Netherlands","DE","Germany",106.4,2021,"NLD","DEU",11608.121896
+"NL","Netherlands","DE","Germany",106.4,2021,"NLD","DEU",11608.121896
+"DK","Denmark","ES","Spain",58.186745,2021,"DNK","ESP",11608.121896
+"GB","United Kingdom","DK","Denmark",68.121067,2021,"GBR","DNK",11608.121896
+"US","United States of America","DK","Denmark",130.565379,2021,"USA","DNK",11608.121896
+"ES","Spain","IE","Ireland",150.197492,2021,"ESP","IRL",11608.121896
+"ES","Spain","US","United States of America",63.863501,2021,"ESP","USA",11608.121896
+"GB","United Kingdom","HK","Hong Kong, China",111.4,2021,"GBR","HKG",11608.121896
+"IE","Ireland","GB","United Kingdom",85.3,2021,"IRL","GBR",11608.121896
+"GB","United Kingdom","IT","Italy",203.6,2021,"GBR","ITA",11608.121896
+"GB","United Kingdom","JP","Japan",195.3,2021,"GBR","JPN",11608.121896
+"GB","United Kingdom","KR","Korea, Republic of",90.8,2021,"GBR","KOR",11608.121896
+"GB","United Kingdom","NL","Netherlands",281.9,2021,"GBR","NLD",11608.121896
+"GB","United Kingdom","NO","Norway",74.3,2021,"GBR","NOR",11608.121896
+"GB","United Kingdom","SE","Sweden",103.2,2021,"GBR","SWE",11608.121896
+"GB","United Kingdom","SG","Singapore",101.7,2021,"GBR","SGP",11608.121896
+"GB","United Kingdom","US","United States of America",1833.4,2021,"GBR","USA",11608.121896
+"IE","Ireland","US","United States of America",183.3119,2021,"IRL","USA",11608.121896
+"US","United States of America","IT","Italy",71.314243,2021,"USA","ITA",11608.121896
+"NL","Netherlands","SE","Sweden",98.988426,2021,"NLD","SWE",11608.121896
+"NL","Netherlands","US","United States of America",125.479952,2021,"NLD","USA",11608.121896
+"NL","Netherlands","ZA","South Africa",103.837321,2021,"NLD","ZAF",11608.121896
+"RO","Romania","US","United States of America",198.686446,2021,"ROU","USA",11608.121896
+"US","United States of America","RU","Russian Federation",132.543,2021,"USA","RUS",11608.121896
+"US","United States of America","SE","Sweden",155.874248,2021,"USA","SWE",11608.121896
+"NL","Netherlands","AT","Austria",98.855537,2022,"NLD","AUT",17546.495951
+"FR","France","BE","Belgium",379.647328,2022,"FRA","BEL",17546.495951
+"FR","France","BE","Belgium",379.647328,2022,"FRA","BEL",17546.495951
+"BG","Bulgaria","GB","United Kingdom",113.263205,2022,"BGR","GBR",17546.495951
+"BG","Bulgaria","US","United States of America",95.910904,2022,"BGR","USA",17546.495951
+"CA","Canada","US","United States of America",1458.2,2022,"CAN","USA",17546.495951
+"ES","Spain","CO","Colombia",95.22,2022,"ESP","COL",17546.495951
+"US","United States of America","CO","Colombia",224.07,2022,"USA","COL",17546.495951
+"DE","Germany","CZ","Czech Republic",95.595407,2022,"DEU","CZE",17546.495951
+"DE","Germany","CZ","Czech Republic",95.595407,2022,"DEU","CZE",17546.495951
+"CZ","Czech Republic","GB","United Kingdom",170.578384,2022,"CZE","GBR",17546.495951
+"IE","Ireland","CZ","Czech Republic",104.11381,2022,"IRL","CZE",17546.495951
+"NL","Netherlands","CZ","Czech Republic",139.34424,2022,"NLD","CZE",17546.495951
+"DE","Germany","ES","Spain",93.7,2022,"DEU","ESP",17546.495951
+"DE","Germany","ES","Spain",93.7,2022,"DEU","ESP",17546.495951
+"DE","Germany","FR","France",240.1,2022,"DEU","FRA",17546.495951
+"DE","Germany","FR","France",240.1,2022,"DEU","FRA",17546.495951
+"GB","United Kingdom","DE","Germany",247.4,2022,"GBR","DEU",17546.495951
+"GB","United Kingdom","DE","Germany",247.4,2022,"GBR","DEU",17546.495951
+"LU","Luxembourg","DE","Germany",312.7,2022,"LUX","DEU",17546.495951
+"LU","Luxembourg","DE","Germany",312.7,2022,"LUX","DEU",17546.495951
+"US","United States of America","DE","Germany",772.9,2022,"USA","DEU",17546.495951
+"US","United States of America","DE","Germany",772.9,2022,"USA","DEU",17546.495951
+"GB","United Kingdom","DK","Denmark",125.357234,2022,"GBR","DNK",17546.495951
+"US","United States of America","DK","Denmark",128.93286,2022,"USA","DNK",17546.495951
+"ES","Spain","FR","France",112.527048,2022,"ESP","FRA",17546.495951
+"ES","Spain","GB","United Kingdom",349.149343,2022,"ESP","GBR",17546.495951
+"IE","Ireland","ES","Spain",191.401146,2022,"IRL","ESP",17546.495951
+"US","United States of America","FR","France",239.77726,2022,"USA","FRA",17546.495951
+"GB","United Kingdom","HK","Hong Kong, China",117,2022,"GBR","HKG",17546.495951
+"GB","United Kingdom","IT","Italy",186.1,2022,"GBR","ITA",17546.495951
+"GB","United Kingdom","JP","Japan",342.7,2022,"GBR","JPN",17546.495951
+"GB","United Kingdom","KR","Korea, Republic of",101.1,2022,"GBR","KOR",17546.495951
+"GB","United Kingdom","NL","Netherlands",406.8,2022,"GBR","NLD",17546.495951
+"GB","United Kingdom","SE","Sweden",107.3,2022,"GBR","SWE",17546.495951
+"GB","United Kingdom","SG","Singapore",93.7,2022,"GBR","SGP",17546.495951
+"GB","United Kingdom","US","United States of America",2859.6,2022,"GBR","USA",17546.495951
+"IE","Ireland","US","United States of America",164.058125,2022,"IRL","USA",17546.495951
+"US","United States of America","IT","Italy",128.301867,2022,"USA","ITA",17546.495951
+"NL","Netherlands","SE","Sweden",115.892342,2022,"NLD","SWE",17546.495951
+"NL","Netherlands","US","United States of America",118.626644,2022,"NLD","USA",17546.495951
+"NL","Netherlands","ZA","South Africa",92.335278,2022,"NLD","ZAF",17546.495951
+"RO","Romania","US","United States of America",326.643934,2022,"ROU","USA",17546.495951
+"US","United States of America","SE","Sweden",136.294442,2022,"USA","SWE",17546.495951
+"US","United States of America","TR","Turkey",113.683867,2022,"USA","TUR",17546.495951
+"NL","Netherlands","AT","Austria",181.653966,2023,"NLD","AUT",17040.462382
+"BG","Bulgaria","GB","United Kingdom",139.159913,2023,"BGR","GBR",17040.462382
+"BG","Bulgaria","US","United States of America",130.617851,2023,"BGR","USA",17040.462382
+"ES","Spain","CO","Colombia",99.22,2023,"ESP","COL",17040.462382
+"US","United States of America","CO","Colombia",201.29,2023,"USA","COL",17040.462382
+"CO","Colombia","UY","Uruguay",230.72,2023,"COL","URY",17040.462382
+"IE","Ireland","CZ","Czech Republic",97.206498,2023,"IRL","CZE",17040.462382
+"CZ","Czech Republic","US","United States of America",105.532304,2023,"CZE","USA",17040.462382
+"GB","United Kingdom","DE","Germany",259.5,2023,"GBR","DEU",17040.462382
+"GB","United Kingdom","DE","Germany",259.5,2023,"GBR","DEU",17040.462382
+"DE","Germany","IE","Ireland",1106.1,2023,"DEU","IRL",17040.462382
+"DE","Germany","IE","Ireland",1106.1,2023,"DEU","IRL",17040.462382
+"DE","Germany","IT","Italy",127.6,2023,"DEU","ITA",17040.462382
+"DE","Germany","IT","Italy",127.6,2023,"DEU","ITA",17040.462382
+"LU","Luxembourg","DE","Germany",354.6,2023,"LUX","DEU",17040.462382
+"LU","Luxembourg","DE","Germany",354.6,2023,"LUX","DEU",17040.462382
+"US","United States of America","DE","Germany",708.2,2023,"USA","DEU",17040.462382
+"US","United States of America","DE","Germany",708.2,2023,"USA","DEU",17040.462382
+"IE","Ireland","EE","Estonia",94.935822,2023,"IRL","EST",17040.462382
+"ES","Spain","FR","France",261.668213,2023,"ESP","FRA",17040.462382
+"ES","Spain","GB","United Kingdom",175.166324,2023,"ESP","GBR",17040.462382
+"IE","Ireland","ES","Spain",242.205288,2023,"IRL","ESP",17040.462382
+"US","United States of America","ES","Spain",127.590286,2023,"USA","ESP",17040.462382
+"US","United States of America","FR","France",210.848353,2023,"USA","FRA",17040.462382
+"GB","United Kingdom","IT","Italy",238.6,2023,"GBR","ITA",17040.462382
+"GB","United Kingdom","JP","Japan",249.9,2023,"GBR","JPN",17040.462382
+"GB","United Kingdom","NL","Netherlands",1162.1,2023,"GBR","NLD",17040.462382
+"GB","United Kingdom","SE","Sweden",109.4,2023,"GBR","SWE",17040.462382
+"GB","United Kingdom","SG","Singapore",195.2,2023,"GBR","SGP",17040.462382
+"GB","United Kingdom","US","United States of America",1858.2,2023,"GBR","USA",17040.462382
+"US","United States of America","IT","Italy",117.96695,2023,"USA","ITA",17040.462382
+"NL","Netherlands","SE","Sweden",140.024932,2023,"NLD","SWE",17040.462382
+"NL","Netherlands","ZA","South Africa",117.750695,2023,"NLD","ZAF",17040.462382
+"RO","Romania","US","United States of America",249.125439,2023,"ROU","USA",17040.462382
+"US","United States of America","SE","Sweden",150.729541,2023,"USA","SWE",17040.462382

@@ -1,0 +1,41 @@
+Mapping Power in the AI Production Network
+
+Network Analysis of Hardware Trade, Data Services, and Cloud Infrastructure (2017–2023)
+
+Project Overview
+
+This project analyses the global AI production network using network analysis methods. It focuses on three sub-networks: compute hardware trade, data service trade, and cloud service infrastructure. Countries are modelled as nodes, and directed, weighted edges represent resource flows between them. The analysis supports a master’s thesis in International Relations.
+
+Data Sources
+- Hardware trade: BACI HS17 bilateral trade data (2017–2023)
+- Data services trade: Bilateral services trade data
+- Cloud infrastructure: Dataset on cloud provider availability regions based on publicly available provider information and cross-validated with Hawkins et al. (2025)
+
+Raw data are stored in data/raw/, while processed datasets are written to data/processed/.
+
+Methods
+- Raw datasets are pre-processed and transformed into directed, weighted network formats
+- Trade data are converted into bilateral trade balances to capture asymmetrical dependencies
+- Cloud infrastructure data are accumulated over time to reflect persistent capacity
+- Centrality measures (strength and betweenness) are calculated per year and network and normalised within each network-year
+- Networks are visualised both as abstract graphs and projected onto a world map
+
+Project Structure
+
+data/        raw and processed datasets  
+scripts/     setup, cleaning, analysis, visualisation  
+R/functions/ reusable functions  
+output/      figures and tables  
+renv/        reproducible environment  
+
+Reproducibility
+
+This project uses the renv package to ensure reproducibility. To restore the project environment:
+
+renv::restore()
+
+The analysis can then be reproduced by running the scripts starting with scripts/00_setup.R.
+
+Key Packages
+
+tidyverse, tidygraph, igraph, ggraph, ggplot2, sf, rnaturalearth, renv
