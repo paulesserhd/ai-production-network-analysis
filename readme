@@ -1,26 +1,34 @@
-Mapping Power in the AI Production Network
+# Mapping Power in the AI Production Network
 
-Network Analysis of Hardware Trade, Data Services, and Cloud Infrastructure (2017–2023)
+## Network Analysis of Hardware Trade, Data Services, and Cloud Infrastructure (2017–2023)
 
-Project Overview
+###Project Overview
 
 This project analyses the global AI production network using network analysis methods. It focuses on three sub-networks: compute hardware trade, data service trade, and cloud service infrastructure. Countries are modelled as nodes, and directed, weighted edges represent resource flows between them. The analysis supports a master’s thesis in International Relations.
 
-Data Sources
-- Hardware trade: BACI HS17 bilateral trade data (2017–2023)
-- Data services trade: Bilateral services trade data
-- Cloud infrastructure: Dataset on cloud provider availability regions based on publicly available provider information and cross-validated with Hawkins et al. (2025)
+### Data Sources
+- **Hardware trade**: BACI International Trade on the Product Level Data Set (HS17 release)
+- **Data services trade**: WTO-OECD Balanced Trade in Services (BaTiS)
+- **Cloud infrastructure**: Dataset on cloud provider availability regions based on publicly available provider information and cross-validated with Hawkins et al. (2025)
 
-Raw data are stored in data/raw/, while processed datasets are written to data/processed/.
+**Processed and included:**  
+This repository contains all processed datasets required to run the analysis, including cleaned and transformed data ready for network construction.
 
-Methods
+**Excluded raw data:**  
+Only the original raw dataset for cloud regions is included in this repository. Due to file size limitations, other raw datasets (trade and cloud service data) are not included.
+- Raw hardware trade datasets are located under `data/raw/hardware/`.  
+- Raw data service datasets are located under `data/raw/data_services/`.  
+
+These datasets can be obtained separately from the original sources and should be placed in the corresponding folders if you want to fully reproduce the analysis.
+
+### Methods
 - Raw datasets are pre-processed and transformed into directed, weighted network formats
 - Trade data are converted into bilateral trade balances to capture asymmetrical dependencies
 - Cloud infrastructure data are accumulated over time to reflect persistent capacity
 - Centrality measures (strength and betweenness) are calculated per year and network and normalised within each network-year
 - Networks are visualised both as abstract graphs and projected onto a world map
 
-Project Structure
+### Project Structure
 
 data/        raw and processed datasets  
 scripts/     setup, cleaning, analysis, visualisation  
@@ -28,14 +36,14 @@ R/functions/ reusable functions
 output/      figures and tables  
 renv/        reproducible environment  
 
-Reproducibility
+### Reproducibility
 
 This project uses the renv package to ensure reproducibility. To restore the project environment:
 
 renv::restore()
 
-The analysis can then be reproduced by running the scripts starting with scripts/00_setup.R.
+The analysis can then be reproduced by running the scripts with scripts/30_runproject.R.
 
-Key Packages
+### Key Packages
 
 tidyverse, tidygraph, igraph, ggraph, ggplot2, sf, rnaturalearth, renv
