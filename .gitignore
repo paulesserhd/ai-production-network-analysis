@@ -1,4 +1,12 @@
 # Large raw datasets
 data/raw/hardware/
 data/raw/data_services/
-.Rproj.user
+
+# R Studio session files
+.Rproj.user/
+.Rhistory
+.RData
+.RDataTmp
+
+# macOS system files
+.DS_Store
