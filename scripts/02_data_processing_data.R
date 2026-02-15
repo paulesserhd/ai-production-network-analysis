@@ -26,8 +26,9 @@ data_service_prefiltered <- data_service_raw %>% filter(Year == "2017" |
                                                     !is.na(Reported_value), # exclude missing values
                                                     Reported_value > 0, # select only trade flows > 0
                                                     Item_code == "SI3", # select information services
-                                                    Partner != "WL") # exclude trade partner "world"
-
+                                                    Partner != "WL", # exclude trade partner "world"
+                                                    Partner != "ROW", # exlude trade partner "rest of world"
+                                                    Flow == "X") # exclude mirrored export-import relationships
 ## Step 2: Rename and filter rows
 data_service_filtered <- data_service_prefiltered %>%
   rename(reporter_country_iso2 = Reporter,
@@ -49,9 +50,13 @@ data_service_named <- data_service_filtered %>%
   rename(reporter_country_name = country_name) %>%
   left_join(country_codes_data, by = c("partner_country_iso2" = "country_code")) %>%
   rename(partner_country_name = country_name) %>%
-  mutate(reporter_country_iso2 = case_when(reporter_country_iso2 == "888" ~ "XK",
+  mutate(reporter_country_iso2 = case_when(reporter_country_iso2 == "888" ~ "XK", # changing country code for Kosovo
                                            TRUE ~ reporter_country_iso2),
          partner_country_iso2 = case_when(partner_country_iso2 == "888" ~ "XK",
+                                          TRUE ~ partner_country_iso2), 
+         reporter_country_iso2 = case_when(reporter_country_iso2 == "PAL" ~ "PS", # changing country code for Palestine
+                                           TRUE ~ reporter_country_iso2),
+         partner_country_iso2 = case_when(partner_country_iso2 == "PAL" ~ "PS",
                                           TRUE ~ partner_country_iso2)) %>%
   select(reporter_country_iso2,
          reporter_country_name,
@@ -63,65 +68,57 @@ data_service_named <- data_service_filtered %>%
 
 ## Step 4: Calculate trade balance per country pair and year
 data_service_bal <- data_service_named %>%
-  mutate(country1_iso2 = pmin(reporter_country_iso2, partner_country_iso2),
-         country2_iso2 = pmax(reporter_country_iso2, partner_country_iso2),
-         country1_name = ifelse(reporter_country_iso2 == country1_iso2, reporter_country_name, partner_country_name),
-         country2_name = ifelse(partner_country_iso2 == country2_iso2, partner_country_name, reporter_country_name), 
-         pair = paste(country1_iso2, country2_iso2, sep = "_"), 
-         signed_value = case_when(
-           reporter_country_iso2 == country1_iso2 & flow == "X" ~ trade_value,
-           reporter_country_iso2 == country1_iso2 & flow == "M" ~ -trade_value, 
-           partner_country_iso2 == country2_iso2 & flow == "X" ~ -trade_value,
-           partner_country_iso2 == country2_iso2 & flow == "M" ~ trade_value
-         )) %>% 
-  group_by(year, pair, country1_iso2, country1_name, country2_iso2, country2_name) %>%
-  reframe(balance = sum(signed_value, na.rm = TRUE)) %>%
-  ungroup() %>%
+  group_by(year, reporter_country_iso2, partner_country_iso2) %>%
+  summarise(
+    exports = sum(trade_value, na.rm = TRUE),
+    .groups = "drop") %>%
+  mutate(
+    country1_iso2 = pmin(reporter_country_iso2, partner_country_iso2),
+    country2_iso2 = pmax(reporter_country_iso2, partner_country_iso2),
+    pair = paste(country1_iso2, country2_iso2, sep = "_"),
+    signed_value = ifelse(
+      reporter_country_iso2 == country1_iso2,
+      exports,
+      -exports)) %>%
+  group_by(year, pair, country1_iso2, country2_iso2) %>%
+  summarise(
+    balance = sum(signed_value, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
   mutate(
     surplus_country_iso2 = ifelse(balance > 0, country1_iso2, country2_iso2),
-    surplus_country_name= ifelse(balance > 0, country1_name, country2_name),
     deficit_country_iso2 = ifelse(balance > 0, country2_iso2, country1_iso2),
-    deficit_country_name = ifelse(balance > 0, country2_name, country1_name),
-    trade_value = abs(balance)) %>%
-  filter(trade_value > 0) %>%
-  select(surplus_country_iso2, 
-         surplus_country_name, 
-         deficit_country_iso2, 
-         deficit_country_name, 
-         trade_value, 
-         year)
+    trade_value = abs(balance)
+  ) %>%
+  filter(trade_value > 0)
 
 ## Step 5: Add iso3 codes
-country_codes_iso3 <- read.csv(file.path(path_external, "country_codes_V202501.csv")) %>%
-  select(country_iso2, country_iso3)
+country_codes_iso3 <- read.csv(file.path(path_external, "country_codes_V202501.csv"))
+
+country_codes_iso3 <- country_codes_iso3 %>%
+  select(country_iso2, country_iso3) %>%
+  distinct(country_iso2, country_iso3) %>%
+  bind_rows(tibble(country_iso2 = "TW",
+                   country_iso3 = "TWN"), # adding iso-translation for Taiwan
+            tibble(country_iso2 = "XK", 
+                   country_iso3 = "XKX"),
+            tibble(country_iso2 = "PS", 
+                   country_iso3 = "PSE")) # adding iso-translation for Palastine
 
 data_service_bal <- data_service_bal %>% 
-  left_join(country_codes_iso3, by = c("surplus_country_iso2" = "country_iso2")) %>%
+  left_join(country_codes_iso3,by = c("surplus_country_iso2" = "country_iso2")) %>%
   rename(surplus_country_iso3 = country_iso3) %>%
-  left_join(country_codes_iso3, by = c("deficit_country_iso2" = "country_iso2")) %>%
+  left_join(country_codes_iso3,by = c("deficit_country_iso2" = "country_iso2")) %>%
   rename(deficit_country_iso3 = country_iso3)
 
-## Step 5: Exclude trade relationships below 0,5% treshold of total trade per year 
-data_service_final <- data_service_bal %>%
-  group_by(year) %>%
-  mutate(total_trade_year = sum(trade_value)) %>%
-  ungroup() %>%
-  filter(trade_value >= 0.005 * total_trade_year)
-
 #Step 6:Transform dataset for plotting
-data_service_plot <- data_service_final %>%
-  rename(from = surplus_country_iso3,
-         to = deficit_country_iso3,
-         weight = trade_value) %>%
-  select(from, to, weight, year)
-
 data_service_centrality <- data_service_bal %>%
+  filter(trade_value > 0) %>%
   rename(from = surplus_country_iso3, 
          to = deficit_country_iso3, 
          weight = trade_value) %>%
   select(from, to, weight, year)
 
 ### Save processed data
-write.csv(data_service_plot, file.path(path_processed, "dataservice_trade_plot_2017_2023.csv"), row.names = FALSE)
 write.csv(data_service_centrality, file.path(path_processed, "dataservice_trade_centrality_2017_2023.csv"), row.names = FALSE)
 ############################################################

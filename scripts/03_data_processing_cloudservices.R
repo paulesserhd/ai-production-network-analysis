@@ -50,12 +50,14 @@ cloud_service_acc <- cloud_service_expanded %>%
 # Reattach metadata
 pair_lookup <- cloud_service_filtered %>%
   mutate(pair = paste(provider_country_iso3, host_country_iso3, sep = "_")) %>%
-  select(pair, 
-         provider_country_iso3, 
-         host_country_iso3, 
-         provider_country_name, 
-         host_country_name) %>%
-  distinct()
+  group_by(pair) %>%
+  summarise(
+    provider_country_iso3  = first(provider_country_iso3),
+    host_country_iso3      = first(host_country_iso3),
+    provider_country_name  = first(provider_country_name),
+    host_country_name      = first(host_country_name),
+    .groups = "drop"
+  )
 
 cloud_service_final <- cloud_service_acc %>%
   left_join(pair_lookup, by = "pair") %>%
@@ -64,19 +66,12 @@ cloud_service_final <- cloud_service_acc %>%
          provider_country_iso3 != host_country_iso3)
 
 # Step 3: Transform dataset for visualisation
-cloud_service_plot <- cloud_service_final %>%
-  rename (from = provider_country_iso3, 
-          to = host_country_iso3, 
-          weight = cumulative_regions) %>%
-  select(from, to, weight, year)
-
 cloud_service_centrality <- cloud_service_final %>%
   rename (from = provider_country_iso3, 
           to = host_country_iso3, 
           weight = cumulative_regions)
 
 ### Save processed data
-write.csv(cloud_service_plot, file.path(path_processed, "cloud_service_regions_plot_2017_2023.csv"))
 write.csv(cloud_service_centrality, file.path(path_processed, "cloud_service_regions_centrality_2017_2023.csv"))
 
 ################################################################################

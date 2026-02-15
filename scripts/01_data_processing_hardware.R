@@ -82,11 +82,12 @@ hardware_trade_bal <- hardware_trade_named %>%
          country2_iso3 = pmax(exporter_iso3, importer_iso3),
          country1_name = ifelse(exporter_iso3 < importer_iso3, exporter_name, importer_name),
          country2_name = ifelse(exporter_iso3 < importer_iso3, importer_name, exporter_name),
-         pair = paste(country1_iso3, country2_iso3, sep = "_")) %>%
+         pair = paste(country1_iso3, country2_iso3, sep = "_"), 
+         signed_trade = ifelse(exporter_iso3 < importer_iso3, trade_value, -trade_value)) %>%
   group_by(pair, year, country1_iso3, country1_name, country2_iso3, country2_name) %>%
-  reframe(
-    signed_trade = ifelse(exporter_iso3 < importer_iso3, trade_value, -trade_value),
-    balance = sum(signed_trade, na.rm = TRUE)
+  summarise(
+    balance = sum(signed_trade, na.rm = TRUE),
+    .groups = "drop"
   ) %>%
     ungroup () %>%
   mutate(
@@ -103,28 +104,15 @@ hardware_trade_bal <- hardware_trade_named %>%
          year) %>%
   mutate(trade_value = trade_value / 1000) # adjust to million USD
 
-## Step 5: Exclude trade relationships below 0,5% treshold of total trade per year for plot dataset
-hardware_trade_final <- hardware_trade_bal %>%
-  group_by(year) %>%
-  mutate(total_trade_year = sum(trade_value)) %>%
-  ungroup() %>%
-  filter(trade_value >= 0.005 * total_trade_year)
-
-# Step 6: Transform dataset for network plot & centrality measures 
-hardware_trade_plot <- hardware_trade_final %>%
-  rename(from = surplus_country_iso3,
-         to = deficit_country_iso3,
-         weight = trade_value) %>%
-  select(from, to, weight, year)
-
+# Step 5: Transform dataset for network plot & centrality measures 
 hardware_trade_centrality <- hardware_trade_bal %>%
+  filter(trade_value > 0) %>%
   rename(from = surplus_country_iso3,
          to = deficit_country_iso3,
          weight = trade_value) %>%
   select(from, to, weight, year)
 
 ### Save processed data
-write.csv(hardware_trade_plot, file.path(path_processed, "hardware_trade_plot_2017_2023.csv"), row.names = FALSE)
 write.csv(hardware_trade_centrality, file.path(path_processed, "hardware_trade_centrality_2017_2023.csv"), row.names = FALSE)
 
 ################################################################################
